@@ -2,8 +2,10 @@ package proyectos.backend.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "proyectos.backend.inventory")
+@EnableJpaRepositories(basePackages = "proyectos.backend.inventory.domain.repository.dao")
 public class InventoryApplication {
 
 	public static void main(String[] args) {
