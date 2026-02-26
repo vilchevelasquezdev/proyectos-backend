@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages = "proyectos.backend.inventory")
-@EnableJpaRepositories(basePackages = "proyectos.backend.inventory.domain.repository.dao")
+@EnableJpaRepositories(basePackages = "proyectos.backend.inventory.dao")
 public class InventoryApplication {
 
 	public static void main(String[] args) {
